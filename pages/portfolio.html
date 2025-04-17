@@ -1,27 +1,26 @@
+<!-- portfolio.html -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Kate Campbell · Web‑Dev Portfolio</title>
-
-    <!-- external stylesheet -->
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kate Campbell · Portfolio</title>
+    <link rel="stylesheet" href="../style/style.css" />
 </head>
 
 <body>
-
-    <!-- HERO / HEADER -->
-    <header>
-        <h1>Kate Campbell</h1>
-        <p>Full‑stack developer who loves turning ideas into elegant, responsive websites.</p>
-        <nav>
-            <a href="#projects">Projects</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+    <header class="site-header">
+        <div class="branding">
+          <h1>Kate Campbell</h1>
+          <p>Developer & Designer | React · JavaScript · HTML/CSS</p>
+        </div>
+        <nav class="main-nav">
+          <a href="index.html">Home</a>
+          <a href="portfolio.html">Portfolio</a>
         </nav>
-    </header>
+      </header>
+
 
     <!-- PROJECTS -->
     <section id="projects">
@@ -29,7 +28,7 @@
         <div class="grid">
             <!-- 1 ─ Voxel Gallery -->
             <article class="card">
-                <img src="assets/voxel-thumb.jpg" alt="Voxel Gallery website screenshot" />
+                <img src="/Portfolio/assets/voxel-thumb.jpg" alt="Voxel Gallery website screenshot" />
                 <div class="card-inner">
                     <h3>Voxel Gallery</h3>
                     <p>Website for a local art gallery highlighting resident artists and upcoming events.</p>
@@ -39,7 +38,7 @@
 
             <!-- 2 ─ Harbour Fest -->
             <article class="card">
-                <img src="assets/harbourfest-thumb.jpg" alt="Harbour Fest theatre‑festival site screenshot" />
+                <img src="/Portfolio/assets/harbour-thumb.jpg" alt="Harbour Fest theatre‑festival site screenshot" />
                 <div class="card-inner">
                     <h3>Harbour Fest</h3>
                     <p>Festival hub for a theatre event in Redruth, UK—artist bios, schedule, and ticket link.</p>
@@ -49,7 +48,7 @@
 
             <!-- 3 ─ Foodi: Recipe & More -->
             <article class="card">
-                <img src="assets/foodi-thumb.jpg" alt="Foodi recipe site screenshot" />
+                <img src="/Portfolio/assets/foodi-thumb.jpg" alt="Foodi recipe site screenshot" />
                 <div class="card-inner">
                     <h3>Foodi: Recipe & More</h3>
                     <p>Recipe archive with search, blog posts, and user‑friendly kitchen tips.</p>
@@ -59,7 +58,7 @@
 
             <!-- 4 ─ Index In Bounds -->
             <article class="card">
-                <img src="assets/index-in-bounds-thumb.jpg" alt="Index In Bounds research group site screenshot" />
+                <img src="/Portfolio/assets/index-thumb.jpg" alt="Index In Bounds research group site screenshot" />
                 <div class="card-inner">
                     <h3>Index In Bounds</h3>
                     <p>Informational site for a computer‑science education research group.</p>
@@ -70,7 +69,7 @@
 
             <!-- 5 ─ Arcade Simulator -->
             <article class="card">
-                <img src="assets/arcade-thumb.jpg" alt="Arcade Simulator (Snake & Pac‑Man) screenshot" />
+                <img src="/Portfolio/assets/arcade-thumb.jpg" alt="Arcade Simulator (Snake & Pac‑Man) screenshot" />
                 <div class="card-inner">
                     <h3>Arcade Simulator: Pac‑Man & Snake</h3>
                     <p>Vanilla‑JS emulator letting users play Snake and a modified Pac‑Man clone.</p>
@@ -81,7 +80,7 @@
 
             <!-- 6 ─ NASA APOD Randomizer -->
             <article class="card">
-                <img src="assets/apod-thumb.jpg" alt="NASA APOD randomizer screenshot" />
+                <img src="/Portfolio/assets/nasa-thumb.jpg" alt="NASA APOD randomizer screenshot" />
                 <div class="card-inner">
                     <h3>NASA Astronomy Picture of the Day</h3>
                     <p>Fetches a random APOD plus description from NASA’s API on every refresh.</p>
@@ -92,7 +91,7 @@
 
             <!-- 7 ─ Eliza Chat Bot -->
             <article class="card">
-                <img src="assets/eliza-thumb.jpg" alt="Eliza grumpy‑cat chatbot screenshot" />
+                <img src="/Portfolio/assets/chatbot-thumb.jpg" alt="Eliza grumpy‑cat chatbot screenshot" />
                 <div class="card-inner">
                     <h3>Eliza Chat Bot</h3>
                     <p>A playful, slightly grumpy cat chatbot built from scratch.</p>
@@ -103,7 +102,7 @@
 
             <!-- 8 ─ Animation with JavaScript -->
             <article class="card">
-                <img src="assets/animation-js-thumb.jpg" alt="JavaScript animation demo screenshot" />
+                <img src="/Portfolio/assets/animation-thumb.jpg" alt="JavaScript animation demo screenshot" />
                 <div class="card-inner">
                     <h3>Animation with JavaScript</h3>
                     <p>Interactive canvas animation—click to evolve the scene (audio warning!).</p>
@@ -114,7 +113,7 @@
 
             <!-- 9 ─ Counter Composition XIII Recreation -->
             <article class="card">
-                <img src="assets/countercomp-thumb.jpg" alt="Counter Composition XIII recreation screenshot" />
+                <img src="/Portfolio/assets/reproduced-thumb.jpg" alt="Counter Composition XIII recreation screenshot" />
                 <div class="card-inner">
                     <h3>Reproduced Counter Composition XIII</h3>
                     <p>Clickable modern‑art homage—tap the painting to animate.</p>
@@ -125,7 +124,7 @@
 
             <!-- 10 ─ 33 Moons -->
             <article class="card">
-                <img src="assets/33moons-thumb.jpg" alt="33 Moons project screenshot" />
+                <img src="/Portfolio/assets/moons-thumb.jpg" alt="33 Moons project screenshot" />
                 <div class="card-inner">
                     <h3>33 Moons</h3>
                     <p>Intro project: click each moon to open its dedicated facts page.</p>
@@ -144,21 +143,11 @@
             Netlify). When I’m not coding, you’ll find me on my bike or experimenting with new baking recipes.</p>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact">
-        <h2>Let’s Work Together</h2>
-        <p>Email: <a href="mailto:campb88@wwu.edu">campb88@wwu.edu</a><br />
-            LinkedIn: <a href="https://www.linkedin.com/in/kate-campbell-b86021296" target="_blank"
-                rel="noopener">linkedin.com/in/kate‑campbell</a>
-        </p>
-    </section>
-
     <footer>
         © <span id="year"></span> Kate Campbell. All rights reserved.
-    </footer>
-
-    <!-- tiny script for current year -->
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-</body>
-
-</html>
+      </footer>
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+    </body>
+    </html>

@@ -1,0 +1,101 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kate Campbell · Home</title>
+    <link rel="stylesheet" href="../style/style.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="branding">
+          <h1>Kate Campbell</h1>
+          <p>Developer & Designer | React · JavaScript · HTML/CSS</p>
+        </div>
+        <nav class="main-nav">
+          <a href="index.html">Home</a>
+          <a href="portfolio.html">Portfolio</a>
+        </nav>
+      </header>
+
+    <!-- SLIDER SECTION -->
+    <section class="slider">
+        <div class="slider-wrapper" id="sliderWrapper">
+            <div class="slide">
+                <img src="../assets/voxel-thumb.jpg" alt="Voxel Gallery screenshot" />
+                <p><strong>Voxel Gallery:</strong> Site for a local art gallery featuring artists and events. <a
+                        href="portfolio.html#voxel">See more →</a></p>
+            </div>
+            <div class="slide">
+                <img src="../assets/harbour-thumb.jpg" alt="Harbour Fest screenshot" />
+                <p><strong>Harbour Fest:</strong> UK theatre festival hub with artist info and schedule. <a
+                        href="portfolio.html#harbour">See more →</a></p>
+            </div>
+            <div class="slide">
+                <img src="../assets/foodi-thumb.jpg" alt="Foodi screenshot" />
+                <p><strong>Foodi:</strong> Recipe archive with search and blog functionality. <a
+                        href="portfolio.html#foodi">See more →</a></p>
+            </div>
+            <div class="slide">
+                <img src="../assets/arcade-thumb.jpg" alt="Arcade Simulator screenshot" />
+                <p><strong>Arcade Simulator:</strong> Play Snake and modified Pac-Man games. <a
+                        href="portfolio.html#arcade">See more →</a></p>
+            </div>
+            <div class="slide">
+                <img src="../assets/chatbot-thumb.jpg" alt="Eliza Chat Bot screenshot" />
+                <p><strong>Eliza Chat Bot:</strong> A grumpy cat-inspired chatbot. <a href="portfolio.html#eliza">See
+                        more →</a></p>
+            </div>
+            <div class="slide">
+                <img src="../assets/animation-thumb.jpg" alt="JavaScript animation demo screenshot" />
+                <p><strong>Animation with JavaScript:</strong> Interactive canvas animation (includes sound). <a
+                        href="portfolio.html#animation">See more →</a></p>
+            </div>
+            <div class="slide">
+                <img src="../assets/reproduced-thumb.jpg" alt="Counter Composition XIII recreation screenshot" />
+                <p><strong>Reproduced Counter Composition XIII:</strong> Clickable modern-art homage. <a
+                        href="portfolio.html#countercomp">See more →</a></p>
+            </div>
+            <div class="slide">
+                <img src="../assets/moons-thumb.jpg" alt="33 Moons project screenshot" />
+                <p><strong>33 Moons:</strong> Intro astronomy site with pages for each moon. <a
+                        href="portfolio.html#moons">See more →</a></p>
+            </div>
+        </div>
+        <div class="slider-nav">
+            <button id="prevSlide">&#8249;</button>
+            <button id="nextSlide">&#8250;</button>
+          </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I build accessible, responsive websites and interactive experiences using React, JavaScript, and modern web
+            technologies. I'm especially interested in work that supports education, art, and community engagement.</p>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:campb88@wwu.edu">campb88@wwu.edu</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/kate-campbell-b86021296" target="_blank">@kate-campbell</a>
+        </p>
+        <p>GitHub: <a href="https://github.com/campb88" target="_blank">@campb88</a></p>
+    </section>
+
+    <footer>
+        © <span id="year"></span> Kate Campbell. All rights reserved.
+    </footer>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <script src="../js/slider.js"></script>
+
+</body>
+
+</html>
